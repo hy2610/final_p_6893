@@ -1,0 +1,1929 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>2020 Democrat Nominee Popularity Visualizatoin</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+  <!-- Custom styles for this template -->
+  <link href="css/agency.css" rel="stylesheet">
+
+  <style>
+    
+    
+    path {
+        stroke: #fff;
+    }
+    
+    path:hover {
+        opacity: 0.9;
+    }
+    
+    rect:hover {
+        fill: blue;
+    }
+    
+    .axis {
+        font: 10px sans-serif;
+    }
+    
+    .legend tr {
+        border-bottom: 1px solid grey;
+    }
+    
+    .legend tr:first-child {
+        border-top: 1px solid grey;
+    }
+    
+    .axis path,
+    .axis line {
+        fill: none;
+        stroke: #000;
+        shape-rendering: crispEdges;
+    }
+    
+    .x.axis path {
+        display: none;
+    }
+    
+    .legend {
+        margin-bottom: 76px;
+        display: inline-block;
+        border-collapse: collapse;
+        border-spacing: 0px;
+    }
+    
+    .legend td {
+        padding: 4px 5px;
+        vertical-align: bottom;
+    }
+    
+    .legendFreq,
+    .legendPerc {
+        align: right;
+        width: 50px;
+    }
+  </style>
+</head>
+
+<body id="page-top">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">Big Data Analytics Final Project</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav text-uppercase ml-auto">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#portfolio">Overview</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#services">Insider Poll</a>
+            </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header 
+  <header class="masthead">
+    <div class="container">
+      <div class="intro-text">
+        <div class="intro-lead-in">2020 Democrat Nominee</div>
+        <div class="intro-heading text-uppercase">Popularity Visualization </div>
+        <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#portfolio">Get Started</a>
+      </div>
+    </div>
+  </header>
+  -->
+
+  <header>
+    <div class="overlay"></div>
+    <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+      <source src="video/democrat.mp4" type="video/mp4">
+    </video>
+    <div class="container h-100">
+      <div class="d-flex h-100 text-center align-items-center">
+        <div class="w-100 text-white">
+          <h1 class="display-3">2020 Democrat Nominee</h1>
+          <p class="lead mb-0">Popularity Visualization</p>
+          <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#portfolio">Get Started</a>
+      </div>
+      </div>
+    </div>
+  </header>
+
+
+  <!-- Portfolio Grid -->
+  <section class="bg-light page-section" id="portfolio">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading text-uppercase">Candidates</h2>
+            <h3 class="section-subheading text-muted">Here are the six most competitive candidates</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 col-sm-6 portfolio-item">
+            <a class="portfolio-link" href="data_visualization/sanders.html" target="_blank">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="fas fa-plus fa-3x"></i>
+                </div>
+              </div>
+                <img class="img-fluid" src="img/portfolio/01-thumbnail.jpg" alt="">
+            </a>
+            <div class="portfolio-caption">
+              <h4>Bernie Sanders</h4>
+              <p class="text-muted">Senator</p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 portfolio-item">
+            <a class="portfolio-link" href="data_visualization/warren.html" target="_blank">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="fas fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="img/portfolio/02-thumbnail.jpg" alt="">
+            </a>
+            <div class="portfolio-caption">
+              <h4>Elizabeth Warren</h4>
+              <p class="text-muted">Senator</p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 portfolio-item">
+            <a class="portfolio-link" href="data_visualization/biden.html" target="_blank">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="fas fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="img/portfolio/03-thumbnail.jpg" alt="">
+            </a>
+            <div class="portfolio-caption">
+              <h4>Joe Biden</h4>
+              <p class="text-muted">Former Vice President</p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 portfolio-item">
+            <a class="portfolio-link" href="data_visualization/harris.html" target="_blank">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="fas fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="img/portfolio/04-thumbnail.jpg" alt="">
+            </a>
+            <div class="portfolio-caption">
+              <h4>Kamala Harris</h4>
+              <p class="text-muted">Senator</p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 portfolio-item">
+            <a class="portfolio-link" href="data_visualization/yang.html" target="_blank">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="fas fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="img/portfolio/05-thumbnail.jpg" alt="">
+            </a>
+            <div class="portfolio-caption">
+              <h4>Andrew Yang</h4>
+              <p class="text-muted">Entrepreneur</p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 portfolio-item">
+            <a class="portfolio-link" href="data_visualization/pete.html" target="_blank">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="fas fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="img/portfolio/06-thumbnail.jpg" alt="">
+            </a>
+            <div class="portfolio-caption">
+              <h4>Peter Buttigieg</h4>
+              <p class="text-muted">Mayor</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  
+    <!-- About -->
+  <section class="page-section" id="services">
+    <div class="col-lg-12 text-center">
+      <h2 class="section-heading text-uppercase">Insider Poll</h2>
+      <h3 class="section-subheading text-muted"> Income Level --> Ethnicity --> Age -->Gender </h3>
+    </div>
+    <div class="container">
+      <div id='dashboard'>
+      </div>
+      <script src="https://d3js.org/d3.v3.min.js"></script>
+      <script>
+          function dashboard(id, fData) {
+              var barColor = 'steelblue';
+  
+              function segColor(c) {
+                  return {
+                      Sanders: "#807dba",
+                      Warren: "#e08214",
+                      Biden: "#41ab5d",
+                      Harris: "#41a0ab",
+                      Yang: "#416dab",
+                      Buttigieg: "#9841ab"
+                  }[c];
+              }
+  
+              // compute total for each state.
+              fData.forEach(function(d) {
+                  d.total = d.freq.Sanders + d.freq.Warren + d.freq.Biden + d.freq.Harris + d.freq.Yang + d.freq.Buttigieg;
+              });
+  
+              // function to handle histogram.
+              function histoGram(fD) {
+                  var hG = {},
+                      hGDim = {
+                          t: 60,
+                          r: 0,
+                          b: 30,
+                          l: 0
+                      };
+                  hGDim.w = 500 - hGDim.l - hGDim.r,
+                      hGDim.h = 300 - hGDim.t - hGDim.b;
+  
+                  //create svg for histogram.
+                  var hGsvg = d3.select(id).append("svg")
+                      .attr("width", hGDim.w + hGDim.l + hGDim.r)
+                      .attr("height", hGDim.h + hGDim.t + hGDim.b).append("g")
+                      .attr("transform", "translate(" + hGDim.l + "," + hGDim.t + ")");
+  
+                  // create function for x-axis mapping.
+                  var x = d3.scale.ordinal().rangeRoundBands([0, hGDim.w], 0.1)
+                      .domain(fD.map(function(d) {
+                          return d[0];
+                      }));
+  
+                  // Add x-axis to the histogram svg.
+                  hGsvg.append("g").attr("class", "x axis")
+                      .attr("transform", "translate(0," + hGDim.h + ")")
+                      .call(d3.svg.axis().scale(x).orient("bottom"));
+  
+                  // Create function for y-axis map.
+                  var y = d3.scale.linear().range([hGDim.h, 0])
+                      .domain([0, d3.max(fD, function(d) {
+                          return d[1];
+                      })]);
+  
+                  // Create bars for histogram to contain rectangles and freq labels.
+                  var bars = hGsvg.selectAll(".bar").data(fD).enter()
+                      .append("g").attr("class", "bar");
+  
+                  //create the rectangles.
+                  bars.append("rect")
+                      .attr("x", function(d) {
+                          return x(d[0]);
+                      })
+                      .attr("y", function(d) {
+                          return y(d[1]);
+                      })
+                      .attr("width", x.rangeBand())
+                      .attr("height", function(d) {
+                          return hGDim.h - y(d[1]);
+                      })
+                      .attr('fill', barColor)
+                      .on("mouseover", mouseover) // mouseover is defined below.
+                      .on("mouseout", mouseout); // mouseout is defined below.
+  
+                  //Create the frequency labels above the rectangles.
+                  bars.append("text").text(function(d) {
+                          return d3.format(",")(d[1])
+                      })
+                      .attr("x", function(d) {
+                          return x(d[0]) + x.rangeBand() / 2;
+                      })
+                      .attr("y", function(d) {
+                          return y(d[1]) - 5;
+                      })
+                      .attr("text-anchor", "middle");
+  
+                  function mouseover(d) { // utility function to be called on mouseover.
+                      // filter for selected state.
+                      var st = fData.filter(function(s) {
+                              return s.State == d[0];
+                          })[0],
+                          nD = d3.keys(st.freq).map(function(s) {
+                              return {
+                                  type: s,
+                                  freq: st.freq[s]
+                              };
+                          });
+  
+                      // call update functions of pie-chart and legend.    
+                      pC.update(nD);
+                      leg.update(nD);
+                  }
+  
+                  function mouseout(d) { // utility function to be called on mouseout.
+                      // reset the pie-chart and legend.    
+                      pC.update(tF);
+                      leg.update(tF);
+                  }
+  
+                  // create function to update the bars. This will be used by pie-chart.
+                  hG.update = function(nD, color) {
+                      // update the domain of the y-axis map to reflect change in frequencies.
+                      y.domain([0, d3.max(nD, function(d) {
+                          return d[1];
+                      })]);
+  
+                      // Attach the new data to the bars.
+                      var bars = hGsvg.selectAll(".bar").data(nD);
+  
+                      // transition the height and color of rectangles.
+                      bars.select("rect").transition().duration(500)
+                          .attr("y", function(d) {
+                              return y(d[1]);
+                          })
+                          .attr("height", function(d) {
+                              return hGDim.h - y(d[1]);
+                          })
+                          .attr("fill", color);
+  
+                      // transition the frequency labels location and change value.
+                      bars.select("text").transition().duration(500)
+                          .text(function(d) {
+                              return d3.format(",")(d[1])
+                          })
+                          .attr("y", function(d) {
+                              return y(d[1]) - 5;
+                          });
+                  }
+                  return hG;
+              }
+  
+              // function to handle pieChart.
+              function pieChart(pD) {
+                  var pC = {},
+                      pieDim = {
+                          w: 250,
+                          h: 250
+                      };
+                  pieDim.r = Math.min(pieDim.w, pieDim.h) / 2;
+  
+                  // create svg for pie chart.
+                  var piesvg = d3.select(id).append("svg")
+                      .attr("width", pieDim.w).attr("height", pieDim.h).append("g")
+                      .attr("transform", "translate(" + pieDim.w / 2 + "," + pieDim.h / 2 + ")");
+  
+                  // create function to draw the arcs of the pie slices.
+                  var arc = d3.svg.arc().outerRadius(pieDim.r - 10).innerRadius(0);
+  
+                  // create a function to compute the pie slice angles.
+                  var pie = d3.layout.pie().sort(null).value(function(d) {
+                      return d.freq;
+                  });
+  
+                  // Draw the pie slices.
+                  piesvg.selectAll("path").data(pie(pD)).enter().append("path").attr("d", arc)
+                      .each(function(d) {
+                          this._current = d;
+                      })
+                      .style("fill", function(d) {
+                          return segColor(d.data.type);
+                      })
+                      .on("mouseover", mouseover).on("mouseout", mouseout);
+  
+                  // create function to update pie-chart. This will be used by histogram.
+                  pC.update = function(nD) {
+                          piesvg.selectAll("path").data(pie(nD)).transition().duration(500)
+                              .attrTween("d", arcTween);
+                      }
+                      // Utility function to be called on mouseover a pie slice.
+                  function mouseover(d) {
+                      // call the update function of histogram with new data.
+                      hG.update(fData.map(function(v) {
+                          return [v.State, v.freq[d.data.type]];
+                      }), segColor(d.data.type));
+                  }
+                  //Utility function to be called on mouseout a pie slice.
+                  function mouseout(d) {
+                      // call the update function of histogram with all data.
+                      hG.update(fData.map(function(v) {
+                          return [v.State, v.total];
+                      }), barColor);
+                  }
+                  // Animating the pie-slice requiring a custom function which specifies
+                  // how the intermediate paths should be drawn.
+                  function arcTween(a) {
+                      var i = d3.interpolate(this._current, a);
+                      this._current = i(0);
+                      return function(t) {
+                          return arc(i(t));
+                      };
+                  }
+                  return pC;
+              }
+  
+              // function to handle legend.
+              function legend(lD) {
+                  var leg = {};
+  
+                  // create table for legend.
+                  var legend = d3.select(id).append("table").attr('class', 'legend');
+  
+                  // create one row per segment.
+                  var tr = legend.append("tbody").selectAll("tr").data(lD).enter().append("tr");
+  
+                  // create the first column for each segment.
+                  tr.append("td").append("svg").attr("width", '16').attr("height", '16').append("rect")
+                      .attr("width", '16').attr("height", '16')
+                      .attr("fill", function(d) {
+                          return segColor(d.type);
+                      });
+  
+                  // create the second column for each segment.
+                  tr.append("td").text(function(d) {
+                      return d.type;
+                  });
+  
+                  // create the third column for each segment.
+                  tr.append("td").attr("class", 'legendFreq')
+                      .text(function(d) {
+                          return d3.format(",")(d.freq);
+                      });
+  
+                  // create the fourth column for each segment.
+                  tr.append("td").attr("class", 'legendPerc')
+                      .text(function(d) {
+                          return getLegend(d, lD);
+                      });
+  
+                  // Utility function to be used to update the legend.
+                  leg.update = function(nD) {
+                      // update the data attached to the row elements.
+                      var l = legend.select("tbody").selectAll("tr").data(nD);
+  
+                      // update the frequencies.
+                      l.select(".legendFreq").text(function(d) {
+                          return d3.format(",")(d.freq);
+                      });
+  
+                      // update the percentage column.
+                      l.select(".legendPerc").text(function(d) {
+                          return getLegend(d, nD);
+                      });
+                  }
+  
+                  function getLegend(d, aD) { // Utility function to compute percentage.
+                      return d3.format("%")(d.freq / d3.sum(aD.map(function(v) {
+                          return v.freq;
+                      })));
+                  }
+  
+                  return leg;
+              }
+  
+              // calculate total frequency by segment for all state.
+              var tF = ['Sanders', 'Warren', 'Biden', 'Harris', 'Yang', 'Buttigieg'].map(function(d) {
+                  return {
+                      type: d,
+                      freq: d3.sum(fData.map(function(t) {
+                          return t.freq[d];
+                      }))
+                  };
+              });
+  
+              // calculate total frequency by state for all segment.
+              var sF = fData.map(function(d) {
+                  return [d.State, d.total];
+              });
+  
+              var hG = histoGram(sF), // create the histogram.
+                  pC = pieChart(tF), // create the pie-chart.
+                  leg = legend(tF); // create the legend.
+          }
+      </script>
+  
+      <script>
+          var freqData = [{
+              State: 'Not',
+              freq: {
+                  Sanders: 220,
+                  Warren: 199,
+                  Biden: 237,
+                  Harris: 117,
+                  Yang: 111,
+                  Buttigieg: 112
+              }
+          }, {
+              State: '<10K',
+              freq: {
+                  Sanders: 173,
+                  Warren: 100,
+                  Biden: 115,
+                  Harris: 48,
+                  Yang: 62,
+                  Buttigieg: 35
+              }
+          }, {
+              State: '10-25K',
+              freq: {
+                  Sanders: 324,
+                  Warren: 233,
+                  Biden: 267,
+                  Harris: 97,
+                  Yang: 115,
+                  Buttigieg: 87
+              }
+          }, {
+              State: '25-50K',
+              freq: {
+                  Sanders: 491,
+                  Warren: 407,
+                  Biden: 506,
+                  Harris: 212,
+                  Yang: 207,
+                  Buttigieg: 178
+              }
+          }, {
+              State: '50-75K',
+              freq: {
+                  Sanders: 469,
+                  Warren: 425,
+                  Biden: 500,
+                  Harris: 230,
+                  Yang: 182,
+                  Buttigieg: 193
+              }
+          }, {
+              State: '75-100K',
+              freq: {
+                  Sanders: 326,
+                  Warren: 307,
+                  Biden: 390,
+                  Harris: 178,
+                  Yang: 156,
+                  Buttigieg: 177
+              }
+          }, {
+              State: '100-125K',
+              freq: {
+                  Sanders: 195,
+                  Warren: 194,
+                  Biden: 252,
+                  Harris: 125,
+                  Yang: 97,
+                  Buttigieg: 126
+              }
+          }, {
+              State: '125-150K',
+              freq: {
+                  Sanders: 85,
+                  Warren: 103,
+                  Biden: 133,
+                  Harris: 54,
+                  Yang: 48,
+                  Buttigieg: 71
+              }
+          }, {
+              State: '150-175K',
+              freq: {
+                  Sanders: 59,
+                  Warren: 68,
+                  Biden: 68,
+                  Harris: 38,
+                  Yang: 29,
+                  Buttigieg: 54
+              }
+          }, {
+              State: '175-200K',
+              freq: {
+                  Sanders: 40,
+                  Warren: 54,
+                  Biden: 76,
+                  Harris: 37,
+                  Yang: 17,
+                  Buttigieg: 37
+              }
+          }, {
+              State: '>200K',
+              freq: {
+                  Sanders: 62,
+                  Warren: 73,
+                  Biden: 107,
+                  Harris: 63,
+                  Yang: 39,
+                  Buttigieg: 66
+              }
+          }];
+  
+          dashboard('#dashboard', freqData);
+      </script>
+    </div>
+  
+  
+  <!-- About -->
+  
+    <div class="container">
+        <div id='dashboard'>
+          </div>
+          <script src="https://d3js.org/d3.v3.min.js"></script>
+          <script>
+              function dashboard(id, fData) {
+                  var barColor = 'steelblue';
+      
+                  function segColor(c) {
+                      return {
+                          Sanders: "#807dba",
+                          Warren: "#e08214",
+                          Biden: "#41ab5d",
+                          Harris: "#41a0ab",
+                          Yang: "#416dab",
+                          Buttigieg: "#9841ab"
+                      }[c];
+                  }
+      
+                  // compute total for each state.
+                  fData.forEach(function(d) {
+                      d.total = d.freq.Sanders + d.freq.Warren + d.freq.Biden + d.freq.Harris + d.freq.Yang + d.freq.Buttigieg;
+                  });
+      
+                  // function to handle histogram.
+                  function histoGram(fD) {
+                      var hG = {},
+                          hGDim = {
+                              t: 60,
+                              r: 0,
+                              b: 30,
+                              l: 0
+                          };
+                      hGDim.w = 500 - hGDim.l - hGDim.r,
+                          hGDim.h = 300 - hGDim.t - hGDim.b;
+      
+                      //create svg for histogram.
+                      var hGsvg = d3.select(id).append("svg")
+                          .attr("width", hGDim.w + hGDim.l + hGDim.r)
+                          .attr("height", hGDim.h + hGDim.t + hGDim.b).append("g")
+                          .attr("transform", "translate(" + hGDim.l + "," + hGDim.t + ")");
+      
+                      // create function for x-axis mapping.
+                      var x = d3.scale.ordinal().rangeRoundBands([0, hGDim.w], 0.1)
+                          .domain(fD.map(function(d) {
+                              return d[0];
+                          }));
+      
+                      // Add x-axis to the histogram svg.
+                      hGsvg.append("g").attr("class", "x axis")
+                          .attr("transform", "translate(0," + hGDim.h + ")")
+                          .call(d3.svg.axis().scale(x).orient("bottom"));
+      
+                      // Create function for y-axis map.
+                      var y = d3.scale.linear().range([hGDim.h, 0])
+                          .domain([0, d3.max(fD, function(d) {
+                              return d[1];
+                          })]);
+      
+                      // Create bars for histogram to contain rectangles and freq labels.
+                      var bars = hGsvg.selectAll(".bar").data(fD).enter()
+                          .append("g").attr("class", "bar");
+      
+                      //create the rectangles.
+                      bars.append("rect")
+                          .attr("x", function(d) {
+                              return x(d[0]);
+                          })
+                          .attr("y", function(d) {
+                              return y(d[1]);
+                          })
+                          .attr("width", x.rangeBand())
+                          .attr("height", function(d) {
+                              return hGDim.h - y(d[1]);
+                          })
+                          .attr('fill', barColor)
+                          .on("mouseover", mouseover) // mouseover is defined below.
+                          .on("mouseout", mouseout); // mouseout is defined below.
+      
+                      //Create the frequency labels above the rectangles.
+                      bars.append("text").text(function(d) {
+                              return d3.format(",")(d[1])
+                          })
+                          .attr("x", function(d) {
+                              return x(d[0]) + x.rangeBand() / 2;
+                          })
+                          .attr("y", function(d) {
+                              return y(d[1]) - 5;
+                          })
+                          .attr("text-anchor", "middle");
+      
+                      function mouseover(d) { // utility function to be called on mouseover.
+                          // filter for selected state.
+                          var st = fData.filter(function(s) {
+                                  return s.State == d[0];
+                              })[0],
+                              nD = d3.keys(st.freq).map(function(s) {
+                                  return {
+                                      type: s,
+                                      freq: st.freq[s]
+                                  };
+                              });
+      
+                          // call update functions of pie-chart and legend.    
+                          pC.update(nD);
+                          leg.update(nD);
+                      }
+      
+                      function mouseout(d) { // utility function to be called on mouseout.
+                          // reset the pie-chart and legend.    
+                          pC.update(tF);
+                          leg.update(tF);
+                      }
+      
+                      // create function to update the bars. This will be used by pie-chart.
+                      hG.update = function(nD, color) {
+                          // update the domain of the y-axis map to reflect change in frequencies.
+                          y.domain([0, d3.max(nD, function(d) {
+                              return d[1];
+                          })]);
+      
+                          // Attach the new data to the bars.
+                          var bars = hGsvg.selectAll(".bar").data(nD);
+      
+                          // transition the height and color of rectangles.
+                          bars.select("rect").transition().duration(500)
+                              .attr("y", function(d) {
+                                  return y(d[1]);
+                              })
+                              .attr("height", function(d) {
+                                  return hGDim.h - y(d[1]);
+                              })
+                              .attr("fill", color);
+      
+                          // transition the frequency labels location and change value.
+                          bars.select("text").transition().duration(500)
+                              .text(function(d) {
+                                  return d3.format(",")(d[1])
+                              })
+                              .attr("y", function(d) {
+                                  return y(d[1]) - 5;
+                              });
+                      }
+                      return hG;
+                  }
+      
+                  // function to handle pieChart.
+                  function pieChart(pD) {
+                      var pC = {},
+                          pieDim = {
+                              w: 250,
+                              h: 250
+                          };
+                      pieDim.r = Math.min(pieDim.w, pieDim.h) / 2;
+      
+                      // create svg for pie chart.
+                      var piesvg = d3.select(id).append("svg")
+                          .attr("width", pieDim.w).attr("height", pieDim.h).append("g")
+                          .attr("transform", "translate(" + pieDim.w / 2 + "," + pieDim.h / 2 + ")");
+      
+                      // create function to draw the arcs of the pie slices.
+                      var arc = d3.svg.arc().outerRadius(pieDim.r - 10).innerRadius(0);
+      
+                      // create a function to compute the pie slice angles.
+                      var pie = d3.layout.pie().sort(null).value(function(d) {
+                          return d.freq;
+                      });
+      
+                      // Draw the pie slices.
+                      piesvg.selectAll("path").data(pie(pD)).enter().append("path").attr("d", arc)
+                          .each(function(d) {
+                              this._current = d;
+                          })
+                          .style("fill", function(d) {
+                              return segColor(d.data.type);
+                          })
+                          .on("mouseover", mouseover).on("mouseout", mouseout);
+      
+                      // create function to update pie-chart. This will be used by histogram.
+                      pC.update = function(nD) {
+                              piesvg.selectAll("path").data(pie(nD)).transition().duration(500)
+                                  .attrTween("d", arcTween);
+                          }
+                          // Utility function to be called on mouseover a pie slice.
+                      function mouseover(d) {
+                          // call the update function of histogram with new data.
+                          hG.update(fData.map(function(v) {
+                              return [v.State, v.freq[d.data.type]];
+                          }), segColor(d.data.type));
+                      }
+                      //Utility function to be called on mouseout a pie slice.
+                      function mouseout(d) {
+                          // call the update function of histogram with all data.
+                          hG.update(fData.map(function(v) {
+                              return [v.State, v.total];
+                          }), barColor);
+                      }
+                      // Animating the pie-slice requiring a custom function which specifies
+                      // how the intermediate paths should be drawn.
+                      function arcTween(a) {
+                          var i = d3.interpolate(this._current, a);
+                          this._current = i(0);
+                          return function(t) {
+                              return arc(i(t));
+                          };
+                      }
+                      return pC;
+                  }
+      
+                  // function to handle legend.
+                  function legend(lD) {
+                      var leg = {};
+      
+                      // create table for legend.
+                      var legend = d3.select(id).append("table").attr('class', 'legend');
+      
+                      // create one row per segment.
+                      var tr = legend.append("tbody").selectAll("tr").data(lD).enter().append("tr");
+      
+                      // create the first column for each segment.
+                      tr.append("td").append("svg").attr("width", '16').attr("height", '16').append("rect")
+                          .attr("width", '16').attr("height", '16')
+                          .attr("fill", function(d) {
+                              return segColor(d.type);
+                          });
+      
+                      // create the second column for each segment.
+                      tr.append("td").text(function(d) {
+                          return d.type;
+                      });
+      
+                      // create the third column for each segment.
+                      tr.append("td").attr("class", 'legendFreq')
+                          .text(function(d) {
+                              return d3.format(",")(d.freq);
+                          });
+      
+                      // create the fourth column for each segment.
+                      tr.append("td").attr("class", 'legendPerc')
+                          .text(function(d) {
+                              return getLegend(d, lD);
+                          });
+      
+                      // Utility function to be used to update the legend.
+                      leg.update = function(nD) {
+                          // update the data attached to the row elements.
+                          var l = legend.select("tbody").selectAll("tr").data(nD);
+      
+                          // update the frequencies.
+                          l.select(".legendFreq").text(function(d) {
+                              return d3.format(",")(d.freq);
+                          });
+      
+                          // update the percentage column.
+                          l.select(".legendPerc").text(function(d) {
+                              return getLegend(d, nD);
+                          });
+                      }
+      
+                      function getLegend(d, aD) { // Utility function to compute percentage.
+                          return d3.format("%")(d.freq / d3.sum(aD.map(function(v) {
+                              return v.freq;
+                          })));
+                      }
+      
+                      return leg;
+                  }
+      
+                  // calculate total frequency by segment for all state.
+                  var tF = ['Sanders', 'Warren', 'Biden', 'Harris', 'Yang', 'Buttigieg'].map(function(d) {
+                      return {
+                          type: d,
+                          freq: d3.sum(fData.map(function(t) {
+                              return t.freq[d];
+                          }))
+                      };
+                  });
+      
+                  // calculate total frequency by state for all segment.
+                  var sF = fData.map(function(d) {
+                      return [d.State, d.total];
+                  });
+      
+                  var hG = histoGram(sF), // create the histogram.
+                      pC = pieChart(tF), // create the pie-chart.
+                      leg = legend(tF); // create the legend.
+              }
+          </script>
+      
+          <script>
+              var freqData = [{
+                  State: 'White',
+                  freq: {
+                      Sanders: 1688,
+                      Warren: 1680,
+                      Biden: 2008,
+                      Harris: 873,
+                      Yang: 674,
+                      Buttigieg: 1000
+                  }
+              }, {
+                  State: 'Latino',
+                  freq: {
+                      Sanders: 237,
+                      Warren: 137,
+                      Biden: 167,
+                      Harris: 83,
+                      Yang: 101,
+                      Buttigieg: 50
+                  }
+              }, {
+                  State: 'Black',
+                  freq: {
+                      Sanders: 193,
+                      Warren: 115,
+                      Biden: 243,
+                      Harris: 119,
+                      Yang: 68,
+                      Buttigieg: 31
+                  }
+              }, {
+                  State: 'Asian',
+                  freq: {
+                      Sanders: 240,
+                      Warren: 172,
+                      Biden: 190,
+                      Harris: 101,
+                      Yang: 172,
+                      Buttigieg: 46
+                  }
+              }, {
+                  State: 'Indian',
+                  freq: {
+                      Sanders: 21,
+                      Warren: 21,
+                      Biden: 23,
+                      Harris: 13,
+                      Yang: 8,
+                      Buttigieg: 5
+                  }
+              }, {
+                  State: 'Another',
+                  freq: {
+                      Sanders: 79,
+                      Warren: 68,
+                      Biden: 55,
+                      Harris: 26,
+                      Yang: 41,
+                      Buttigieg: 22
+                  }
+              }];
+      
+              dashboard('#dashboard', freqData);
+          </script>
+
+    </div>
+
+  
+  <!-- About -->
+    <div class="container">
+        <div id='dashboard'>
+          </div>
+          <script src="https://d3js.org/d3.v3.min.js"></script>
+          <script>
+              function dashboard(id, fData) {
+                  var barColor = 'steelblue';
+      
+                  function segColor(c) {
+                      return {
+                          Sanders: "#807dba",
+                          Warren: "#e08214",
+                          Biden: "#41ab5d",
+                          Harris: "#41a0ab",
+                          Yang: "#416dab",
+                          Buttigieg: "#9841ab"
+                      }[c];
+                  }
+      
+                  // compute total for each state.
+                  fData.forEach(function(d) {
+                      d.total = d.freq.Sanders + d.freq.Warren + d.freq.Biden + d.freq.Harris + d.freq.Yang + d.freq.Buttigieg;
+                  });
+      
+                  // function to handle histogram.
+                  function histoGram(fD) {
+                      var hG = {},
+                          hGDim = {
+                              t: 60,
+                              r: 0,
+                              b: 30,
+                              l: 0
+                          };
+                      hGDim.w = 500 - hGDim.l - hGDim.r,
+                          hGDim.h = 300 - hGDim.t - hGDim.b;
+      
+                      //create svg for histogram.
+                      var hGsvg = d3.select(id).append("svg")
+                          .attr("width", hGDim.w + hGDim.l + hGDim.r)
+                          .attr("height", hGDim.h + hGDim.t + hGDim.b).append("g")
+                          .attr("transform", "translate(" + hGDim.l + "," + hGDim.t + ")");
+      
+                      // create function for x-axis mapping.
+                      var x = d3.scale.ordinal().rangeRoundBands([0, hGDim.w], 0.1)
+                          .domain(fD.map(function(d) {
+                              return d[0];
+                          }));
+      
+                      // Add x-axis to the histogram svg.
+                      hGsvg.append("g").attr("class", "x axis")
+                          .attr("transform", "translate(0," + hGDim.h + ")")
+                          .call(d3.svg.axis().scale(x).orient("bottom"));
+      
+                      // Create function for y-axis map.
+                      var y = d3.scale.linear().range([hGDim.h, 0])
+                          .domain([0, d3.max(fD, function(d) {
+                              return d[1];
+                          })]);
+      
+                      // Create bars for histogram to contain rectangles and freq labels.
+                      var bars = hGsvg.selectAll(".bar").data(fD).enter()
+                          .append("g").attr("class", "bar");
+      
+                      //create the rectangles.
+                      bars.append("rect")
+                          .attr("x", function(d) {
+                              return x(d[0]);
+                          })
+                          .attr("y", function(d) {
+                              return y(d[1]);
+                          })
+                          .attr("width", x.rangeBand())
+                          .attr("height", function(d) {
+                              return hGDim.h - y(d[1]);
+                          })
+                          .attr('fill', barColor)
+                          .on("mouseover", mouseover) // mouseover is defined below.
+                          .on("mouseout", mouseout); // mouseout is defined below.
+      
+                      //Create the frequency labels above the rectangles.
+                      bars.append("text").text(function(d) {
+                              return d3.format(",")(d[1])
+                          })
+                          .attr("x", function(d) {
+                              return x(d[0]) + x.rangeBand() / 2;
+                          })
+                          .attr("y", function(d) {
+                              return y(d[1]) - 5;
+                          })
+                          .attr("text-anchor", "middle");
+      
+                      function mouseover(d) { // utility function to be called on mouseover.
+                          // filter for selected state.
+                          var st = fData.filter(function(s) {
+                                  return s.State == d[0];
+                              })[0],
+                              nD = d3.keys(st.freq).map(function(s) {
+                                  return {
+                                      type: s,
+                                      freq: st.freq[s]
+                                  };
+                              });
+      
+                          // call update functions of pie-chart and legend.    
+                          pC.update(nD);
+                          leg.update(nD);
+                      }
+      
+                      function mouseout(d) { // utility function to be called on mouseout.
+                          // reset the pie-chart and legend.    
+                          pC.update(tF);
+                          leg.update(tF);
+                      }
+      
+                      // create function to update the bars. This will be used by pie-chart.
+                      hG.update = function(nD, color) {
+                          // update the domain of the y-axis map to reflect change in frequencies.
+                          y.domain([0, d3.max(nD, function(d) {
+                              return d[1];
+                          })]);
+      
+                          // Attach the new data to the bars.
+                          var bars = hGsvg.selectAll(".bar").data(nD);
+      
+                          // transition the height and color of rectangles.
+                          bars.select("rect").transition().duration(500)
+                              .attr("y", function(d) {
+                                  return y(d[1]);
+                              })
+                              .attr("height", function(d) {
+                                  return hGDim.h - y(d[1]);
+                              })
+                              .attr("fill", color);
+      
+                          // transition the frequency labels location and change value.
+                          bars.select("text").transition().duration(500)
+                              .text(function(d) {
+                                  return d3.format(",")(d[1])
+                              })
+                              .attr("y", function(d) {
+                                  return y(d[1]) - 5;
+                              });
+                      }
+                      return hG;
+                  }
+      
+                  // function to handle pieChart.
+                  function pieChart(pD) {
+                      var pC = {},
+                          pieDim = {
+                              w: 250,
+                              h: 250
+                          };
+                      pieDim.r = Math.min(pieDim.w, pieDim.h) / 2;
+      
+                      // create svg for pie chart.
+                      var piesvg = d3.select(id).append("svg")
+                          .attr("width", pieDim.w).attr("height", pieDim.h).append("g")
+                          .attr("transform", "translate(" + pieDim.w / 2 + "," + pieDim.h / 2 + ")");
+      
+                      // create function to draw the arcs of the pie slices.
+                      var arc = d3.svg.arc().outerRadius(pieDim.r - 10).innerRadius(0);
+      
+                      // create a function to compute the pie slice angles.
+                      var pie = d3.layout.pie().sort(null).value(function(d) {
+                          return d.freq;
+                      });
+      
+                      // Draw the pie slices.
+                      piesvg.selectAll("path").data(pie(pD)).enter().append("path").attr("d", arc)
+                          .each(function(d) {
+                              this._current = d;
+                          })
+                          .style("fill", function(d) {
+                              return segColor(d.data.type);
+                          })
+                          .on("mouseover", mouseover).on("mouseout", mouseout);
+      
+                      // create function to update pie-chart. This will be used by histogram.
+                      pC.update = function(nD) {
+                              piesvg.selectAll("path").data(pie(nD)).transition().duration(500)
+                                  .attrTween("d", arcTween);
+                          }
+                          // Utility function to be called on mouseover a pie slice.
+                      function mouseover(d) {
+                          // call the update function of histogram with new data.
+                          hG.update(fData.map(function(v) {
+                              return [v.State, v.freq[d.data.type]];
+                          }), segColor(d.data.type));
+                      }
+                      //Utility function to be called on mouseout a pie slice.
+                      function mouseout(d) {
+                          // call the update function of histogram with all data.
+                          hG.update(fData.map(function(v) {
+                              return [v.State, v.total];
+                          }), barColor);
+                      }
+                      // Animating the pie-slice requiring a custom function which specifies
+                      // how the intermediate paths should be drawn.
+                      function arcTween(a) {
+                          var i = d3.interpolate(this._current, a);
+                          this._current = i(0);
+                          return function(t) {
+                              return arc(i(t));
+                          };
+                      }
+                      return pC;
+                  }
+      
+                  // function to handle legend.
+                  function legend(lD) {
+                      var leg = {};
+      
+                      // create table for legend.
+                      var legend = d3.select(id).append("table").attr('class', 'legend');
+      
+                      // create one row per segment.
+                      var tr = legend.append("tbody").selectAll("tr").data(lD).enter().append("tr");
+      
+                      // create the first column for each segment.
+                      tr.append("td").append("svg").attr("width", '16').attr("height", '16').append("rect")
+                          .attr("width", '16').attr("height", '16')
+                          .attr("fill", function(d) {
+                              return segColor(d.type);
+                          });
+      
+                      // create the second column for each segment.
+                      tr.append("td").text(function(d) {
+                          return d.type;
+                      });
+      
+                      // create the third column for each segment.
+                      tr.append("td").attr("class", 'legendFreq')
+                          .text(function(d) {
+                              return d3.format(",")(d.freq);
+                          });
+      
+                      // create the fourth column for each segment.
+                      tr.append("td").attr("class", 'legendPerc')
+                          .text(function(d) {
+                              return getLegend(d, lD);
+                          });
+      
+                      // Utility function to be used to update the legend.
+                      leg.update = function(nD) {
+                          // update the data attached to the row elements.
+                          var l = legend.select("tbody").selectAll("tr").data(nD);
+      
+                          // update the frequencies.
+                          l.select(".legendFreq").text(function(d) {
+                              return d3.format(",")(d.freq);
+                          });
+      
+                          // update the percentage column.
+                          l.select(".legendPerc").text(function(d) {
+                              return getLegend(d, nD);
+                          });
+                      }
+      
+                      function getLegend(d, aD) { // Utility function to compute percentage.
+                          return d3.format("%")(d.freq / d3.sum(aD.map(function(v) {
+                              return v.freq;
+                          })));
+                      }
+      
+                      return leg;
+                  }
+      
+                  // calculate total frequency by segment for all state.
+                  var tF = ['Sanders', 'Warren', 'Biden', 'Harris', 'Yang', 'Buttigieg'].map(function(d) {
+                      return {
+                          type: d,
+                          freq: d3.sum(fData.map(function(t) {
+                              return t.freq[d];
+                          }))
+                      };
+                  });
+      
+                  // calculate total frequency by state for all segment.
+                  var sF = fData.map(function(d) {
+                      return [d.State, d.total];
+                  });
+      
+                  var hG = histoGram(sF), // create the histogram.
+                      pC = pieChart(tF), // create the pie-chart.
+                      leg = legend(tF); // create the legend.
+              }
+          </script>
+      
+          <script>
+              var freqData = [{
+                  State: '18-29',
+                  freq: {
+                      Sanders: 830,
+                      Warren: 1527,
+                      Biden: 540,
+                      Harris: 248,
+                      Yang: 436,
+                      Buttigieg: 186
+                  }
+              }, {
+                  State: '30-44',
+                  freq: {
+                      Sanders: 601,
+                      Warren: 452,
+                      Biden: 500,
+                      Harris: 279,
+                      Yang: 213,
+                      Buttigieg: 187
+                  }
+              }, {
+                  State: '45-60',
+                  freq: {
+                      Sanders: 704,
+                      Warren: 706,
+                      Biden: 995,
+                      Harris: 380,
+                      Yang: 247,
+                      Buttigieg: 387
+                  }
+              }, {
+                  State: '>60',
+                  freq: {
+                      Sanders: 310,
+                      Warren: 480,
+                      Biden: 617,
+                      Harris: 294,
+                      Yang: 168,
+                      Buttigieg: 378
+                  }
+              }];
+      
+              dashboard('#dashboard', freqData);
+          </script>
+    </div>
+
+
+<!-- About -->
+  <div class="container">
+      <div id='dashboard'>
+        </div>
+        <script src="https://d3js.org/d3.v3.min.js"></script>
+        <script>
+            function dashboard(id, fData) {
+                var barColor = 'steelblue';
+    
+                function segColor(c) {
+                    return {
+                        Sanders: "#807dba",
+                        Warren: "#e08214",
+                        Biden: "#41ab5d",
+                        Harris: "#41a0ab",
+                        Yang: "#416dab",
+                        Buttigieg: "#9841ab"
+                    }[c];
+                }
+    
+                // compute total for each state.
+                fData.forEach(function(d) {
+                    d.total = d.freq.Sanders + d.freq.Warren + d.freq.Biden + d.freq.Harris + d.freq.Yang + d.freq.Buttigieg;
+                });
+    
+                // function to handle histogram.
+                function histoGram(fD) {
+                    var hG = {},
+                        hGDim = {
+                            t: 60,
+                            r: 0,
+                            b: 30,
+                            l: 0
+                        };
+                    hGDim.w = 500 - hGDim.l - hGDim.r,
+                        hGDim.h = 300 - hGDim.t - hGDim.b;
+    
+                    //create svg for histogram.
+                    var hGsvg = d3.select(id).append("svg")
+                        .attr("width", hGDim.w + hGDim.l + hGDim.r)
+                        .attr("height", hGDim.h + hGDim.t + hGDim.b).append("g")
+                        .attr("transform", "translate(" + hGDim.l + "," + hGDim.t + ")");
+    
+                    // create function for x-axis mapping.
+                    var x = d3.scale.ordinal().rangeRoundBands([0, hGDim.w], 0.1)
+                        .domain(fD.map(function(d) {
+                            return d[0];
+                        }));
+    
+                    // Add x-axis to the histogram svg.
+                    hGsvg.append("g").attr("class", "x axis")
+                        .attr("transform", "translate(0," + hGDim.h + ")")
+                        .call(d3.svg.axis().scale(x).orient("bottom"));
+    
+                    // Create function for y-axis map.
+                    var y = d3.scale.linear().range([hGDim.h, 0])
+                        .domain([0, d3.max(fD, function(d) {
+                            return d[1];
+                        })]);
+    
+                    // Create bars for histogram to contain rectangles and freq labels.
+                    var bars = hGsvg.selectAll(".bar").data(fD).enter()
+                        .append("g").attr("class", "bar");
+    
+                    //create the rectangles.
+                    bars.append("rect")
+                        .attr("x", function(d) {
+                            return x(d[0]);
+                        })
+                        .attr("y", function(d) {
+                            return y(d[1]);
+                        })
+                        .attr("width", x.rangeBand())
+                        .attr("height", function(d) {
+                            return hGDim.h - y(d[1]);
+                        })
+                        .attr('fill', barColor)
+                        .on("mouseover", mouseover) // mouseover is defined below.
+                        .on("mouseout", mouseout); // mouseout is defined below.
+    
+                    //Create the frequency labels above the rectangles.
+                    bars.append("text").text(function(d) {
+                            return d3.format(",")(d[1])
+                        })
+                        .attr("x", function(d) {
+                            return x(d[0]) + x.rangeBand() / 2;
+                        })
+                        .attr("y", function(d) {
+                            return y(d[1]) - 5;
+                        })
+                        .attr("text-anchor", "middle");
+    
+                    function mouseover(d) { // utility function to be called on mouseover.
+                        // filter for selected state.
+                        var st = fData.filter(function(s) {
+                                return s.State == d[0];
+                            })[0],
+                            nD = d3.keys(st.freq).map(function(s) {
+                                return {
+                                    type: s,
+                                    freq: st.freq[s]
+                                };
+                            });
+    
+                        // call update functions of pie-chart and legend.    
+                        pC.update(nD);
+                        leg.update(nD);
+                    }
+    
+                    function mouseout(d) { // utility function to be called on mouseout.
+                        // reset the pie-chart and legend.    
+                        pC.update(tF);
+                        leg.update(tF);
+                    }
+    
+                    // create function to update the bars. This will be used by pie-chart.
+                    hG.update = function(nD, color) {
+                        // update the domain of the y-axis map to reflect change in frequencies.
+                        y.domain([0, d3.max(nD, function(d) {
+                            return d[1];
+                        })]);
+    
+                        // Attach the new data to the bars.
+                        var bars = hGsvg.selectAll(".bar").data(nD);
+    
+                        // transition the height and color of rectangles.
+                        bars.select("rect").transition().duration(500)
+                            .attr("y", function(d) {
+                                return y(d[1]);
+                            })
+                            .attr("height", function(d) {
+                                return hGDim.h - y(d[1]);
+                            })
+                            .attr("fill", color);
+    
+                        // transition the frequency labels location and change value.
+                        bars.select("text").transition().duration(500)
+                            .text(function(d) {
+                                return d3.format(",")(d[1])
+                            })
+                            .attr("y", function(d) {
+                                return y(d[1]) - 5;
+                            });
+                    }
+                    return hG;
+                }
+    
+                // function to handle pieChart.
+                function pieChart(pD) {
+                    var pC = {},
+                        pieDim = {
+                            w: 250,
+                            h: 250
+                        };
+                    pieDim.r = Math.min(pieDim.w, pieDim.h) / 2;
+    
+                    // create svg for pie chart.
+                    var piesvg = d3.select(id).append("svg")
+                        .attr("width", pieDim.w).attr("height", pieDim.h).append("g")
+                        .attr("transform", "translate(" + pieDim.w / 2 + "," + pieDim.h / 2 + ")");
+    
+                    // create function to draw the arcs of the pie slices.
+                    var arc = d3.svg.arc().outerRadius(pieDim.r - 10).innerRadius(0);
+    
+                    // create a function to compute the pie slice angles.
+                    var pie = d3.layout.pie().sort(null).value(function(d) {
+                        return d.freq;
+                    });
+    
+                    // Draw the pie slices.
+                    piesvg.selectAll("path").data(pie(pD)).enter().append("path").attr("d", arc)
+                        .each(function(d) {
+                            this._current = d;
+                        })
+                        .style("fill", function(d) {
+                            return segColor(d.data.type);
+                        })
+                        .on("mouseover", mouseover).on("mouseout", mouseout);
+    
+                    // create function to update pie-chart. This will be used by histogram.
+                    pC.update = function(nD) {
+                            piesvg.selectAll("path").data(pie(nD)).transition().duration(500)
+                                .attrTween("d", arcTween);
+                        }
+                        // Utility function to be called on mouseover a pie slice.
+                    function mouseover(d) {
+                        // call the update function of histogram with new data.
+                        hG.update(fData.map(function(v) {
+                            return [v.State, v.freq[d.data.type]];
+                        }), segColor(d.data.type));
+                    }
+                    //Utility function to be called on mouseout a pie slice.
+                    function mouseout(d) {
+                        // call the update function of histogram with all data.
+                        hG.update(fData.map(function(v) {
+                            return [v.State, v.total];
+                        }), barColor);
+                    }
+                    // Animating the pie-slice requiring a custom function which specifies
+                    // how the intermediate paths should be drawn.
+                    function arcTween(a) {
+                        var i = d3.interpolate(this._current, a);
+                        this._current = i(0);
+                        return function(t) {
+                            return arc(i(t));
+                        };
+                    }
+                    return pC;
+                }
+    
+                // function to handle legend.
+                function legend(lD) {
+                    var leg = {};
+    
+                    // create table for legend.
+                    var legend = d3.select(id).append("table").attr('class', 'legend');
+    
+                    // create one row per segment.
+                    var tr = legend.append("tbody").selectAll("tr").data(lD).enter().append("tr");
+    
+                    // create the first column for each segment.
+                    tr.append("td").append("svg").attr("width", '16').attr("height", '16').append("rect")
+                        .attr("width", '16').attr("height", '16')
+                        .attr("fill", function(d) {
+                            return segColor(d.type);
+                        });
+    
+                    // create the second column for each segment.
+                    tr.append("td").text(function(d) {
+                        return d.type;
+                    });
+    
+                    // create the third column for each segment.
+                    tr.append("td").attr("class", 'legendFreq')
+                        .text(function(d) {
+                            return d3.format(",")(d.freq);
+                        });
+    
+                    // create the fourth column for each segment.
+                    tr.append("td").attr("class", 'legendPerc')
+                        .text(function(d) {
+                            return getLegend(d, lD);
+                        });
+    
+                    // Utility function to be used to update the legend.
+                    leg.update = function(nD) {
+                        // update the data attached to the row elements.
+                        var l = legend.select("tbody").selectAll("tr").data(nD);
+    
+                        // update the frequencies.
+                        l.select(".legendFreq").text(function(d) {
+                            return d3.format(",")(d.freq);
+                        });
+    
+                        // update the percentage column.
+                        l.select(".legendPerc").text(function(d) {
+                            return getLegend(d, nD);
+                        });
+                    }
+    
+                    function getLegend(d, aD) { // Utility function to compute percentage.
+                        return d3.format("%")(d.freq / d3.sum(aD.map(function(v) {
+                            return v.freq;
+                        })));
+                    }
+    
+                    return leg;
+                }
+    
+                // calculate total frequency by segment for all state.
+                var tF = ['Sanders', 'Warren', 'Biden', 'Harris', 'Yang', 'Buttigieg'].map(function(d) {
+                    return {
+                        type: d,
+                        freq: d3.sum(fData.map(function(t) {
+                            return t.freq[d];
+                        }))
+                    };
+                });
+    
+                // calculate total frequency by state for all segment.
+                var sF = fData.map(function(d) {
+                    return [d.State, d.total];
+                });
+    
+                var hG = histoGram(sF), // create the histogram.
+                    pC = pieChart(tF), // create the pie-chart.
+                    leg = legend(tF); // create the legend.
+            }
+        </script>
+    
+        <script>
+            var freqData = [{
+                State: 'Female',
+                freq: {
+                    Sanders: 1288,
+                    Warren: 1184,
+                    Biden: 1458,
+                    Harris: 672,
+                    Yang: 404,
+                    Buttigieg: 580
+                }
+            }, {
+                State: 'Male',
+                freq: {
+                    Sanders: 1157,
+                    Warren: 981,
+                    Biden: 1194,
+                    Harris: 529,
+                    Yang: 660,
+                    Buttigieg: 558
+                }
+            }];
+    
+            dashboard('#dashboard', freqData);
+        </script>
+  </div>
+</section>
+
+
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-4">
+          <span class="copyright">Copyright &copy; Big Data 2019 Fall</span>
+        </div>
+        <div class="col-md-4">
+          <ul class="list-inline social-buttons">
+            <li class="list-inline-item">
+              <a href="#">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <ul class="list-inline quicklinks">
+            <li class="list-inline-item">
+              <a href="#">Privacy Policy</a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#">Terms of Use</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Portfolio Modals -->
+
+  <!-- Modal 1 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <div class="modal-body">
+                
+                <!-- Project Details Go Here -->
+                <h2 class="text-uppercase">Project Name</h2>
+                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                <img class="img-fluid d-block mx-auto" src="img/portfolio/01-full.jpg" alt="">
+                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                <ul class="list-inline">
+                  <li>Date: January 2017</li>
+                  <li>Client: Threads</li>
+                  <li>Category: Illustration</li>
+                </ul>
+                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                  <i class="fas fa-times"></i>
+                  Close Project</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 2 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <div class="modal-body">
+                <!-- Project Details Go Here -->
+                <h2 class="text-uppercase">Project Name</h2>
+                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                <img class="img-fluid d-block mx-auto" src="img/portfolio/02-full.jpg" alt="">
+                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                <ul class="list-inline">
+                  <li>Date: January 2017</li>
+                  <li>Client: Explore</li>
+                  <li>Category: Graphic Design</li>
+                </ul>
+                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                  <i class="fas fa-times"></i>
+                  Close Project</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 3 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <div class="modal-body">
+                <!-- Project Details Go Here -->
+                <h2 class="text-uppercase">Project Name</h2>
+                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                <img class="img-fluid d-block mx-auto" src="img/portfolio/03-full.jpg" alt="">
+                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                <ul class="list-inline">
+                  <li>Date: January 2017</li>
+                  <li>Client: Finish</li>
+                  <li>Category: Identity</li>
+                </ul>
+                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                  <i class="fas fa-times"></i>
+                  Close Project</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 4 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <div class="modal-body">
+                <!-- Project Details Go Here -->
+                <h2 class="text-uppercase">Project Name</h2>
+                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                <img class="img-fluid d-block mx-auto" src="img/portfolio/04-full.jpg" alt="">
+                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                <ul class="list-inline">
+                  <li>Date: January 2017</li>
+                  <li>Client: Lines</li>
+                  <li>Category: Branding</li>
+                </ul>
+                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                  <i class="fas fa-times"></i>
+                  Close Project</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 5 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <div class="modal-body">
+                <!-- Project Details Go Here -->
+                <h2 class="text-uppercase">Project Name</h2>
+                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                <img class="img-fluid d-block mx-auto" src="img/portfolio/05-full.jpg" alt="">
+                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                <ul class="list-inline">
+                  <li>Date: January 2017</li>
+                  <li>Client: Southwest</li>
+                  <li>Category: Website Design</li>
+                </ul>
+                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                  <i class="fas fa-times"></i>
+                  Close Project</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 6 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <div class="modal-body">
+                <!-- Project Details Go Here -->
+                <h2 class="text-uppercase">Project Name</h2>
+                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                <img class="img-fluid d-block mx-auto" src="img/portfolio/06-full.jpg" alt="">
+                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                <ul class="list-inline">
+                  <li>Date: January 2017</li>
+                  <li>Client: Window</li>
+                  <li>Category: Photography</li>
+                </ul>
+                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                  <i class="fas fa-times"></i>
+                  Close Project</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Contact form JavaScript -->
+  <script src="js/jqBootstrapValidation.js"></script>
+  <script src="js/contact_me.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/agency.min.js"></script>
+
+</body>
+
+</html>

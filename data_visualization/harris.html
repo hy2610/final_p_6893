@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Kamala Harris</title>
+    <script src="http://d3js.org/d3.v3.min.js" language="JavaScript"></script>
+    <script src="liquidFillGauge.js" language="JavaScript"></script>
+    <style>
+        .liquidFillGaugeText {
+            font-family: Helvetica;
+            font-weight: bold;
+        }
+    </style>
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet">
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/resume.min.css" rel="stylesheet">
+
+</head>
+
+<style>
+    .state {
+        fill: none;
+        stroke: #a9a9a9;
+        stroke-width: 1;
+    }
+    
+    .state:hover {
+        fill-opacity: 0.5;
+    }
+    
+    #tooltip {
+        position: absolute;
+        text-align: center;
+        padding: 20px;
+        margin: 10px;
+        font: 12px sans-serif;
+        background: lightsteelblue;
+        border: 1px;
+        border-radius: 2px;
+        pointer-events: none;
+    }
+    
+    #tooltip h4 {
+        margin: 0;
+        font-size: 14px;
+    }
+    
+    #tooltip {
+        background: rgba(0, 0, 0, 0.9);
+        border: 1px solid grey;
+        border-radius: 5px;
+        font-size: 12px;
+        width: auto;
+        padding: 4px;
+        color: white;
+        opacity: 0;
+    }
+    
+    #tooltip table {
+        table-layout: fixed;
+    }
+    
+    #tooltip tr td {
+        padding: 0;
+        margin: 0;
+    }
+    
+    #tooltip tr td:nth-child(1) {
+        width: 50px;
+    }
+    
+    #tooltip tr td:nth-child(2) {
+        text-align: center;
+    }
+</style>
+
+
+<body id="page-top">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">
+            <span class="d-block d-lg-none">Kamala Harris</span>
+            <span class="d-none d-lg-block">
+        <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/04-thumbnail.jpg" alt="">
+      </span>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#about">Introductoin</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#map">Tweet Analysis</a>
+                </li>
+                <!-- Custom styles for this template 
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#skills">Tweet Analysis</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#interests">Interests</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#awards">Awards</a>
+        </li>
+        -->
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container-fluid p-0">
+
+        <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="about">
+            <div class="w-100">
+                <h1 class="mb-0">Kamala
+                    <span class="text-primary">Harris</span>
+                    <sup>
+              <small>
+              <small>
+              <small>
+              <a href="https://twitter.com/KamalaHarris">
+                  <i class="fab fa-twitter"></i>
+              </small>
+              </small>
+              </small>
+              </sup>
+                    </small>
+                    </a>
+                </h1>
+                <p class="lead mb-5">Campaign Idea: Affordable Housing, Climate Change, Criminal Justice Reform, Economic Justice, Foreign Policy, Immigration, Education, Health Care</p>
+                <div class="social-icons">
+                    <img src="harris.jpg" alt="Trulli" width="800" height="444">
+                </div>
+
+            </div>
+        </section>
+
+        <hr class="m-0">
+
+        <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="map">
+            <div id="tooltip"></div>
+            <!-- div to hold tooltip. -->
+            <svg width="960" height="600" id="statesvg"></svg>
+            <!-- svg to hold the map. -->
+            <script src="uStates.js"></script>
+            <!-- creates uStates. -->
+            <script src="http://d3js.org/d3.v3.min.js"></script>
+            <script>
+                function tooltipHtml(n, d) { /* function to create html content string in tooltip div. */
+                    return "<h4>" + n + "</h4><table>" +
+                        "<tr><td>support</td><td>" + (d.support) + "</td></tr>" +
+                        "<tr><td>oppose</td><td>" + (d.oppose) + "</td></tr>" +
+                        "</table>";
+                }
+
+                var numbers1 = ["67.2%", "77.5%", "64.9%", "69.7%", "72.0%", "68.1%", "68.3%", "69.1%", "69.3%"]
+                var numbers2 = ["32.8%", "22.5%", "35.1%", "30.3%", "28.0%", "31.9%", "31.7%", "30.9%", "30.7%"]
+                var numbers3 = [67, 78, 65, 70, 72, 68, 68, 69, 69]
+                var sampleData = {}; /* Sample random data. */
+                ["PA", "ESC", "WSC", "MOU", "NE", "SA", "WNC", "ENC", "MA"]
+                .forEach(function(d, i) {
+                    var support = numbers1[i],
+                        oppose = numbers2[i],
+                        hot = numbers3[i];
+                    sampleData[d] = {
+                        support: support,
+                        oppose: oppose,
+                        color: d3.interpolate("#ffffcc", "#800026")(hot * hot / 4000)
+                    };
+                });
+
+                /* draw states on id #statesvg */
+                uStates.draw("#statesvg", sampleData, tooltipHtml);
+
+                d3.select(self.frameElement).style("height", "600px");
+            </script>
+            <svg id="fillgauge1" width="10%" height="150"></svg>
+
+            <script language="JavaScript">
+                var gauge1 = loadLiquidFillGauge("fillgauge1", 68);
+                var config1 = liquidFillGaugeDefaultSettings();
+                config1.circleColor = "#FF7777";
+                config1.textColor = "#FF4444";
+                config1.waveTextColor = "#FFAAAA";
+                config1.waveColor = "#FFDDDD";
+                config1.circleThickness = 0.2;
+                config1.textVertPosition = 0.2;
+                config1.waveAnimateTime = 1000;
+            </script>
+
+
+    </div>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/resume.min.js"></script>
+
+</body>
+
+</html>
